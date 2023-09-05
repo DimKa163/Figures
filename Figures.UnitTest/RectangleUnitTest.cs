@@ -17,9 +17,9 @@ namespace Figures.UnitTest
             double a = 1;
             double b = 2;
             IFigure figure = _figureFactory.CreateRectangle(a, b);
-            var square = 6;
+            double square = 6;
 
-            var result = figure.GetSquare();
+            double result = figure.GetSquare();
 
             Assert.Equal(square, result);
         }
@@ -29,9 +29,9 @@ namespace Figures.UnitTest
             double a = 5.2;
             double b = 10.5;
             IFigure figure = _figureFactory.CreateRectangle(a, b);
-            var square = 31.4;
+            double square = 31.4;
 
-            var result = figure.GetSquare();
+            double result = figure.GetSquare();
 
             Assert.Equal(square, result);
         }

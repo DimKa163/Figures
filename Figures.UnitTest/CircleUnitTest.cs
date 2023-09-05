@@ -16,9 +16,9 @@ namespace Figures.UnitTest
         {
             double radius = 1;
             IFigure figure = _figureFactory.CreateCircle(radius);
-            var square = 3.14;
+            double square = 3.14;
 
-            var result = figure.GetSquare();
+            double result = figure.GetSquare();
 
             Assert.Equal(square, result);
         }
@@ -27,9 +27,9 @@ namespace Figures.UnitTest
         {
             double radius = 2.5;
             IFigure figure = _figureFactory.CreateCircle(radius);
-            var square = 19.62;
+            double square = 19.62;
 
-            var result = figure.GetSquare();
+            double result = figure.GetSquare();
 
             Assert.Equal(square, result);
         }
